@@ -1,9 +1,9 @@
 package hacka.mangue.contests.service.impl;
 
-import hacka.mangue.contests.controller.exceptions.BusinessException;
 import hacka.mangue.contests.domain.models.user.User;
 import hacka.mangue.contests.domain.repository.UserRepository;
 import hacka.mangue.contests.service.UserService;
+import hacka.mangue.contests.service.exceptions.BusinessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

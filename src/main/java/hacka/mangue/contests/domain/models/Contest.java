@@ -13,12 +13,14 @@ public class Contest {
     private String name;
     private String description;
 
-    @ManyToMany
+    @ElementCollection(fetch = FetchType.EAGER)
+    @Enumerated(EnumType.STRING)
     private List<Tematic> tematic;
 
     private Long participants;
 
-    @ManyToMany
+    @ElementCollection(fetch = FetchType.EAGER)
+    @Enumerated(EnumType.STRING)
     private List<Scholarity> scholarity;
 
     private String icon;
